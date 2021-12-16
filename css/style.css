@@ -1,27 +1,54 @@
 body {
     background-color: hsl(217, 54%, 11%);
-    color: white;
+    color: #88a5d0;
     font-size: .75em;
     
 }
 
 
+
+h2 {
+    color: white;
+}
+
+h2:hover {
+    color: cyan;
+}
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: cyan;
+}
+
 /* ===== containers ===== */
 
 .card {
+    /* position: relative; */
     width: 20%;
-    margin: 10% auto;
+    height: auto;
+    margin: 7% auto;
+    padding: 1.5em;
     background-color: hsl(216, 50%, 16%);
     border-radius: 20px;
-    height: 50%;
-    padding: 1.5em;
-    
+    /* height: 50%; */ 
 }
 
-.card:hover {
-    color: skyblue;
+
+
+.main-images {
+    display: flex;
+    position: relative;
 }
 
+.main-images:hover {
+    color: cyan;
+}
 
 .component {
     display: flex;
@@ -52,7 +79,7 @@ body {
 
 .text-ether {
     margin-left: .5em;
-    color: skyblue;
+    color: cyan;
 }
 
 
@@ -67,13 +94,35 @@ body {
 }
 
 
+
 /* ====== images ====== */
 
 .img-equilibrium {
     border-radius: 20px;
     width: 100%;
     height: auto;
-    
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover .img-equilibrium {
+    opacity: 0.5;
+    color: skyblue;
+}
+
+.img-view {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 15%;
+    top: 45%;
+    left: 44%;  
+}
+
+.card:hover .img-view {
+    opacity: 1;
 }
 
 .img-ethereum {
@@ -91,4 +140,6 @@ body {
 .img-avatar {
     width: 10%;
     height: 10%; 
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
