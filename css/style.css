@@ -1,0 +1,94 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+    color: white;
+    font-size: .75em;
+    
+}
+
+
+/* ===== containers ===== */
+
+.card {
+    width: 20%;
+    margin: 10% auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 20px;
+    height: 50%;
+    padding: 1.5em;
+    
+}
+
+.card:hover {
+    color: skyblue;
+}
+
+
+.component {
+    display: flex;
+    justify-content: space-between;
+    border-bottom:  hsl(215, 32%, 27%) solid 2px;
+    padding: 1em;
+}
+
+.ethereum {
+    display: flex;
+    align-items: center;
+
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+
+.author {
+    padding-top: 1em;
+    display: flex;
+    align-items: center;
+}
+
+/* ====== texts ====== */
+
+.text-ether {
+    margin-left: .5em;
+    color: skyblue;
+}
+
+
+.text-time {
+    margin-left: .5em;
+}
+
+
+
+.text-author {
+    margin-left: .5em;
+}
+
+
+/* ====== images ====== */
+
+.img-equilibrium {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    
+}
+
+.img-ethereum {
+    width: 12%;
+    height: auto;
+}
+
+
+.img-clock {
+    width: 15%;
+    height: auto;
+}
+
+
+.img-avatar {
+    width: 10%;
+    height: 10%; 
+}
