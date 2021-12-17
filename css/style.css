@@ -1,7 +1,8 @@
 body {
     background-color: hsl(217, 54%, 11%);
     color: #88a5d0;
-    font-size: .75em;
+    font-size: .80em;
+    font-family: 'Outfit', sans-serif;
     
 }
 
@@ -30,10 +31,10 @@ a:hover {
 
 .card {
     /* position: relative; */
-    width: 20%;
+    width: 17%;
     height: auto;
     margin: 7% auto;
-    padding: 1.5em;
+    padding: 2em;
     background-color: hsl(216, 50%, 16%);
     border-radius: 20px;
     /* height: 50%; */ 
